@@ -1,0 +1,47 @@
+{
+	"name": "DELETE_BY_ID",
+	"description":"Delete by id",
+	"inputModelName":"",
+	"outputModelName":"",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "exporttesting1table1field1":"no8bbHQSs259ciuhQOrb0kD40",
+                        "exporttesting1table1field2":"Wvxbju6aeZ5fCL3hu7jBDmonp"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/exporttesting1table1s/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTesting1Table1"
+             },
+				            "userName":"AppAdmin",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"DELETE_BY_IDS",
+			           "method":"DELETE",
+			           "requestUrl":"/rest/exporttesting1table1s/{ids}",
+			           "userName":"AppAdmin"		
+	       },
+	"deleteRecordInfo":[{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTesting1Table1"
+             }
+	       ],
+	"outputData": [
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":true,
+	"verificationRequestDetails":{
+			                        "method":"GET",
+			                        "requestUrl":"/rest/exporttesting1table1s/{sid}",
+			                        "expectedResponseCode":204,
+			                        "userName":"AppAdmin"
+	       }
+}

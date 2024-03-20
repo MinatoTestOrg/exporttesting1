@@ -1,0 +1,51 @@
+{
+	"name": "READ_BY_ID",
+	"description":"Read by id",
+	"inputModelName":"com.minatoorgtestcase.exporttesting1.model.ExportTesting1Table1",
+	"outputModelName":"com.minatoorgtestcase.exporttesting1.model.ExportTesting1Table1",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "exporttesting1table1field1":"G7G0OW1IfVkxEfPk15XaiIWM3",
+                        "exporttesting1table1field2":"GxBnTQIVQpCQHKf9XoshhVWp4"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/exporttesting1table1s/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTesting1Table1"
+             },
+				            "userName":"AppAdmin",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"GET_BY_SID",
+			           "method":"GET",
+			           "requestUrl":"/rest/exporttesting1table1s/{sid}",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTesting1Table1"
+             },
+			           "userName":"AppAdmin"		
+	       },
+	"outputData": [{
+                        "exporttesting1table1field1":"G7G0OW1IfVkxEfPk15XaiIWM3",
+                        "exporttesting1table1field2":"GxBnTQIVQpCQHKf9XoshhVWp4"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "ExportTesting1Table1":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/exporttesting1table1s/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"AppAdmin"
+             }		
+	       }
+}

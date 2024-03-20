@@ -1,0 +1,63 @@
+{
+  "left" : [ {
+    "accessControl" : [ "App Admin" ],
+    "outline" : false,
+    "label" : "MENU",
+    "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/applicationuser/applicationuserlist" ],
+    "accessControl" : [ "App Admin" ],
+    "onClick" : "navigate_to_page",
+    "outline" : false,
+    "label" : "APPLICATION_USER",
+    "page" : {
+      "sid" : "0853c5cb-1aa2-45dc-b393-568dd44bd7ef",
+      "name" : "Application Users",
+      "url" : "/applicationuser/applicationuserlist"
+    },
+    "element" : "menuItem"
+  }, {
+    "pathsInvolved" : [ "/exporttesting1table1/exporttesting1table1list", "/exporttesting1table1/exporttesting1table1detail" ],
+    "accessControl" : [ "all" ],
+    "onClick" : "navigate_to_page",
+    "outline" : false,
+    "infiniteScroll" : false,
+    "valueChange" : true,
+    "currentNode" : "cb1d495a-e564-4638-8084-88c91ebde6aa",
+    "label" : "EXPORTTESTING1TABLE1_LIST_PAGE",
+    "page" : {
+      "sid" : "9ecec206-763c-483b-9595-9f4e6de58ea9",
+      "name" : "exportTesting1Table1 List",
+      "url" : "/exporttesting1table1/exporttesting1table1list"
+    },
+    "element" : "menuItem"
+  }, {
+    "customUrl" : "/exports/exportspage",
+    "accessControl" : [ "all" ],
+    "onClick" : "navigate_to_url",
+    "outline" : false,
+    "valueChange" : true,
+    "currentNode" : "export-menu",
+    "icon" : {
+      "type" : "icon",
+      "icon" : {
+        "label" : "fas fa-upload",
+        "value" : "fas fa-upload"
+      },
+      "iconColor" : "#000000",
+      "iconSize" : "18px"
+    },
+    "label" : "EXPORTS",
+    "element" : "menuItem"
+  } ],
+  "topBarLeft" : [ ],
+  "topBarMiddle" : [ ],
+  "topBarRight" : [ {
+    "languages" : [ {
+      "code" : "en",
+      "name" : "English"
+    } ],
+    "element" : "language"
+  } ],
+  "right" : [ ]
+}

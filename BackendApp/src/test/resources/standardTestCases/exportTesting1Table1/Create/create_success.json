@@ -1,0 +1,41 @@
+{
+	"name": "CREATE_SUCCESS",
+	"description":"Create success",
+	"inputModelName":"com.minatoorgtestcase.exporttesting1.model.ExportTesting1Table1",
+	"outputModelName":"com.minatoorgtestcase.exporttesting1.model.ExportTesting1Table1",
+	"setUp":[
+	       ],
+	"requestDetails":{
+			           "serviceType":"CREATE",
+			           "inputData":{
+                        "exporttesting1table1field1":"Ym3XWoXSRNJsSQD6VK59CV0dM",
+                        "exporttesting1table1field2":"ddvEg9j9vMHVLRNyIb7EHKflv"
+             },
+			           "method":"POST",
+			           "requestUrl":"/rest/exporttesting1table1s/",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTesting1Table1"
+             },
+			           "userName":"AppAdmin",
+			           "fileAttachmentInfo":[ 
+             ],
+			           "lookupConfiguration":{
+             }		
+	       },
+	"outputData": [{
+                        "exporttesting1table1field1":"Ym3XWoXSRNJsSQD6VK59CV0dM",
+                        "exporttesting1table1field2":"ddvEg9j9vMHVLRNyIb7EHKflv"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "ExportTesting1Table1":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/exporttesting1table1s/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"AppAdmin"
+             }		
+	       }
+}
